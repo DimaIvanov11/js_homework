@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    Array.prototype.myForEach=function(callback){
+        const yourArray=this
+        for (const item of yourArray) {
+            callback(item)
+
+        }
+
+    }
+
+    [].myForEach()
+
+    Array.prototype.myFilter=function(predicate){
+        const arr=[]
+        for (const item of this) {
+
+            if (predicate(item)){
+                arr.push(item)
+            }
+            
+        }
+        return arr
+    }
+</script>
+</body>
+</html>

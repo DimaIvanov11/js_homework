@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Client(id, name, surname , email, phone, order){
+        this.id=id
+        this.name=name
+        this.surname=surname
+        this.email=email
+        this.phone=phone
+        this.order=order
+    }
+    let clients=[
+        new Client(1,'dima','ivanov','qwe@gmail.com',['tv','phone']),
+        new Client(2,'vasya','ivanov','ewr@gmail.com',['tv']),
+        new Client(3,'kolya','ivanov','asd@gmail.com',['phone','tv','fridge']),
+        new Client(4,'max','ivanov','asd@gmail.com',['tv','fridge']),
+        new Client(5,'max','petrov','zwe@gmail.com',['tv','fridge','phone','oven']),
+        new Client(6,'dima','petrov','yue@gmail.com',['phone','oven']),
+        new Client(7,'masha','ivanova','yzs@gmail.com',['phone','oven','tv']),
+        new Client(8,'masha','ivanova','yzs@gmail.com',['phone','oven','tv','car','fridge']),
+        new Client(9,'vasya','ivanov','ewr@gmail.com',['phone']),
+        new Client(10,'katya','ivanova','yzs@gmail.com',['oven','tv']),
+    ]
+
+    const sort=clients.sort((a, b) => a.order.length-b.order.length);
+    console.log(sort)
+
+
+</script>
+
+</body>
+</html>

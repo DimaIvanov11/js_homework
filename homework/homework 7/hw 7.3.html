@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function User(id,name,surname,phone){
+    this.id=id;
+    this.name=name;
+    this.surname=surname;
+    this.phone=phone;
+  }
+
+  let users=[
+    new User(3,'vasya','petrov','050829954'),
+    new User(2,'petya','ivanov','6950394949585'),
+    new User(1,'anya','vasin','960394949585'),
+    new User(44,'max','ivanov','4646646463'),
+    new User(45,'kolya','ivanov','53434546'),
+    new User(63,'michael','ivanov','53434546'),
+    new User(7,'michael','ivanov','53434546'),
+    new User(83,'max','ivanov','4646646463'),
+    new User(9,'max','ivanov','4646646463'),
+    new User(10,'anya','vasin','960394949585'),
+
+  ]
+
+  function sorter(user1,user2){
+    return user1.id-user2.id;
+  }
+  console.log(users.sort(sorter))
+</script>
+</body>
+</html>
